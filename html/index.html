@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Reporter</title>
+    <link rel="stylesheet" href="./bundle.css" />
+ 
+</head>
+<body>
+    <div class="loading-overlay">
+    </div>
+
+    <div>
+        <h1>Weather Report by Maya</h1>
+        <h3>Select a Canadian city to see the current weather report:</h3>
+    </div>
+
+    <div class="nav"> 
+        <select class="nav__menu" id="dropDownList"></select>
+    </div>  
+
+    <div id="weatherOverview">   
+        <i id="dynamicIconWeather" class=""></i>
+        <div id="currentWeather">
+        </div>
+    
+        <div id="currentCity"></div>
+    </div>
+
+    <div id="grey-weather" class="weather">
+
+        <div class="tempbox">
+            <div class="flex">
+                <i class="wi wi-thermometer"></i>
+                <div class="tempbox tempbox--title"><b>Temperature</b></div>
+            </div>
+            <div id="currentTemp"></div>
+            <div id="low"></div>
+            <div id="high"></div>
+            <div id="feelsLike"></div>
+        </div>
+        
+        <div class="tempbox">
+            <div class="flex">
+                <i id="dynamicIconPrecip" class=""></i>
+                <div class="tempbox tempbox--title"><b>Precipitation</b></div>
+            </div>
+            <div id="precipitation">0 mm</div>
+        </div>
+        
+        <div class="tempbox">
+            <div class="flex">
+                <i class="wi wi-humidity"></i>
+                <div class="tempbox tempbox--title"><b>Humidity</b></div>
+            </div>
+            <div id="humidity"></div>
+        </div>
+
+        <div class="tempbox">
+            <div class="flex">
+                <i class="wi wi-barometer"></i>
+                <div class="tempbox tempbox--title"><b>Air Pressure</b></div>
+            </div>
+                <div id="hPa"></div>
+        </div>
+
+        <div class="tempbox">
+            <div class="flex">
+                <i id="dynamicIconWind" class=""></i>
+                <div class="tempbox tempbox--title"><b>Wind</b></div>
+            </div>
+            <div id="windDirection"></div>
+            <div id="windName"></div>
+            <div id="windSpeed"></div>
+        </div>   
+    </div>  
+
+    <div id="city__notfound">
+        City Not Found!
+    </div>
+
+    <div id="footer">
+        Powered by <a href="https://openweathermap.org/">openweathermap</a> | <a href="http://erikflowers.github.io/weather-icons/">weathericons</a>
+    </div>
+   
+    <script type="text/javascript" src="./bundle.js"></script>   
+</body>
+</html>

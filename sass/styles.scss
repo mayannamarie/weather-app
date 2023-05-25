@@ -1,0 +1,138 @@
+@use "./header";
+@use "./nav";
+
+
+#dynamicIconWind {
+    padding-right: 0px; 
+    padding-left: 0px;
+    height: -webkit-fill-available;
+    //margin-left: 15px;
+}
+#city__notfound {
+    display: none;
+    font-size: 6em;
+}
+
+#weatherOverview {
+    text-align: center;
+}
+
+i {
+    padding-right: 5px;
+    font-size: 1.5em;
+}
+
+#dynamicIconWeather  {
+    font-size: 6em;
+}
+.weather {
+    height: 160px;
+    width: 100%;
+    max-width: 65%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    margin: 1em;
+    padding: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tempbox {
+    padding: 10px;
+    
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+#currentWeather {
+    padding-top: 15px;
+}
+#footer {
+    color: white;
+    padding-bottom: 10px;
+}
+#footer a {
+    text-decoration: none;
+    color: white;
+    
+}
+@media (max-width: 695px) {
+    .weather{
+        width: 400px;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;   
+        display: flex;
+        flex-direction: column;
+        width: 475px;
+        height: 100%;
+        
+        order: 2px solid white;
+        align-items: center;
+        margin: 10px;
+        text-align: justify;
+        border-radius: 15px;
+        align-content: space-between;
+    }
+    #dynamicIconWeather {
+        font-size: 6em;
+        padding: 15px;
+    }
+    #grey-weather {
+        border: solid;
+    border-color: yellowgreen;
+    } 
+    .tempbox {
+        padding: 10px;
+        
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+    }
+    i  {
+        padding-right: 2px;
+        font-size: 1.5em;
+        padding-left: 0px;       
+    }
+    #city__notfound {
+        display: none;
+        font-size: 3em;
+    }
+    h3  {
+        display: flex;
+        white-space: pre-wrap;
+        color: yellowgreen;
+    }
+    h1 {
+        color: yellowgreen;
+    }
+    body {
+        background-color: #4d4b4b;
+    }
+    #footer {
+        color: yellowgreen;
+        padding-bottom: 10px;
+    }
+    #footer a {
+        text-decoration: none;
+        color: yellowgreen;
+    }
+}

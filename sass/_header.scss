@@ -1,0 +1,14 @@
+@use "./base";
+
+.header {
+  font-size: base.$font-size * 4;
+  font-weight: bold;
+  font-family: "Arvo", sans-serif;
+  color: mix(base.$background-color, base.$font-color);
+
+  &--subtitle {
+    font-size: base.$font-size;
+    letter-spacing:3px;
+    padding-bottom: 20px;
+  }
+}
